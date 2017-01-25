@@ -47,13 +47,13 @@ h1+p {
   max-width: 720px;
 }
 
-.work-description-title {
+.title {
   margin: 0 auto;
   width: 410px;
   position: relative;
 }
 
-.work-description-title::before {
+.title::before {
   content: "";
   position: absolute;
   bottom: 40%;
@@ -63,7 +63,7 @@ h1+p {
   width: 584px;
 }
 
-.work-description-title::after {
+.title::after {
   content: "";
   position: absolute;
   bottom: 40%;
@@ -71,6 +71,31 @@ h1+p {
   background-color: #CCCCCC;
   height: 2px;
   width: 584px;
+}
+
+.work-description-content {
+  display: block;
+  float: left;
+  text-align: center;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 400;
+  padding-top: 170px;
+  width: 23%;
+  position: relative;
+}
+
+.work-description-content::before {
+  content:"";
+  width: 101px;
+  height: 101px;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #EA6F1C;
+  top: 34px;
+  left: 55px;
+  padding: 10px;
+  border: 2px solid #EA6F1C;
 }
 
 img {
@@ -96,7 +121,38 @@ h2 {
   margin: 0;
 }
 
+.slider-items {
+  width: 9999px;
+}
 
+.slider-items ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider-item {
+  float: left;
+}
+
+.order-form {
+  margin: 0 auto;
+  width: 36%;
+  max-width: 435px;
+  padding: 30px 64px;
+  border: 3px solid #DBDBD2;
+  border-radius: 10px;
+}
+
+.form-input {
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.conditions {
+  width: 230px;
+  margin: 0 auto;
+}
 
 @media screen and (max-width: 980px) {
   .container {
