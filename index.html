@@ -4,31 +4,33 @@
 <head>
   <meta charset="utf-8">
   <title>Вкус на дом</title>
-  <link href="css/normalize.min.css" rel="stylesheet">
-  <link href="css/style.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:700,500,900&subset=cyrillic" rel="stylesheet">
 </head>
 
 <body>
+
   <header>
-    <div class="container">
-      <div class="header-title">
-        <h1>Устали ходить за продуктами<span>в магазин?</span></h1>
+    <div class="container bcg">
+      <div class="header-title clearfix">
+        <h1>Устали ходить за продуктами</h1>
+        <p>в магазин?</p>
       </div>
-      <div class="header-stock">
+      <div class="header-stock clearfix">
         <div class="stock-preview">
-          <img src="img/image-header.jpg">
+          <img src="img/image-header.jpg" width="720" height="480">
         </div>
         <section class="stock-description">
           <p>А что, если мы вам предложим коробку с продуктами и рецептами на 3 ужина для двоих по специальной цене?</p>
           <p>Заманчиво? Спешите заказать! Доставим бесплатно.</p>
-          <a href="#order">Заказать</a>
-          <p>3 ужина на двоих всего за <span>2000 P</span> <span>1600 P</span></p>
+          <a href="#order" class="btn">Заказать</a>
+          <p class="">3 ужина на двоих всего за <span class="old-cost">2000 P</span> <span class="new-cost">1600 P</span></p>
           <p>Успейте заказать до полуночи пятницы, чтобы получить коробку в воскресенье, 25 сентября</p>
         </section>
       </div>
     </div>
   </header>
+
   <main>
     <div class="container">
       <div class="work-description">
@@ -48,47 +50,51 @@
           <p>Вы готовите по нашему рецепту - 30 минут и ваш вкусный ужин готов!</p>
         </div>
       </div>
-      <div class="slider">
-        <div class="slider-title">
-          <h2>Меню на 3 ужина</h2>
-        </div>
-        <div class="slider-items">
-          <ul>
-            <li class="slider-item">
-              <img scr="img/slider.jpg">
-              <p>Паста с мясными шариками в томатном соусе с сыром</p>
-            </li>
-            <li class="slider-item">
-              <img scr="img/slider.jpg">
-              <p>Паста с мясными шариками в томатном соусе с сыром</p>
-            </li>
-            <li class="slider-item">
-              <img scr="img/slider.jpg">
-              <p>Паста с мясными шариками в томатном соусе с сыром</p>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <div class="slider">
+      <div class="slider-title">
+        <h2>Меню на 3 ужина</h2>
       </div>
+      <div class="slider-items">
+        <ul>
+          <li class="slider-item">
+            <img src="img/slider.jpg" width="926" height="501">
+            <p>Паста с мясными шариками в томатном соусе с сыром</p>
+          </li>
+          <li class="slider-item">
+            <img src="img/slider.jpg" width="926" height="501">
+            <p>Паста с мясными шариками в томатном соусе с сыром</p>
+          </li>
+          <li class="slider-item">
+            <img src="img/slider.jpg" width="926" height="501">
+            <p>Паста с мясными шариками в томатном соусе с сыром</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
       <a id="order"></a>
       <div class="order">
         <div class="order-title">
           <h2>Не прощелкайте ;)</h2>
         </div>
         <div class="order-form">
-          <p>Закажите 3 ужина на двоих за <span>1600 Р</span></p>
+          <p>Закажите 3 ужина на двоих за <span class="new-cost">1600 Р</span></p>
           <p>Только на первый заказ</p>
           <form>
             <input class="form-input form-name" type="text" placeholder="Ваше имя">
-            <input class="form-input form-phone" type="" placeholder="Ваш телефон">
-            <input class="form-input form-email" type="" placeholder="Ваш email">
+            <input class="form-input form-phone" type="text" placeholder="Ваш телефон">
+            <input class="form-input form-email" type="email" placeholder="Ваш email">
             <input class="btn" type="submit" value="Заказать">
           </form>
           <p>Успейте заказать до полуночи пятницы, чтобы получить коробку в воскресенье, 25 сентября. Доставка бесплатно!</p>
         </div>
       </div>
+      <a href="#">Условия обслуживания</a>
     </div>
-  </main>
-  <footer>
-    <a href="#">Условия обслуживания</a>
   </footer>
+
 </body>
