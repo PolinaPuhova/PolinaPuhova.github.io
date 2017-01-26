@@ -1,6 +1,10 @@
+html {
+  font-size: 100%;
+}
+
 body {
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: bold;
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -17,17 +21,18 @@ body {
 .header-title {
   margin: 0 auto;
   max-width: 937px;
+  width: 816px;
 }
 
 h1 {
-  font-size: 57px;
+  font-size: 3.56rem;
   line-height: 69px;
   margin: 0;
 }
 
 h1+p {
   font-family: "Roboto slab";
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 57px;
   font-weight: 400;
   color: #4D4D4D;
@@ -45,6 +50,12 @@ h1+p {
 .stock-preview {
   width: 100%;
   max-width: 720px;
+}
+
+.stock-limitation {
+  font-size: 14px;
+  line-height: 15px;
+  color: #808080;
 }
 
 .title {
@@ -146,10 +157,18 @@ img {
   float: left;
   width: 40%;
   margin-left: 3%;
+  padding-top: 44px;
 }
 
 .stock-text {
   font-weight: 400;
+  width: 80%;
+}
+
+.stock-btn {
+  display: inline-block;
+  margin-top: 50px;
+  padding-right: 0px;
 }
 
 .stock-condition {
@@ -193,6 +212,7 @@ h2 {
 
 .slider-item {
   float: left;
+  text-align: center;
 }
 
 .order-form {
@@ -207,6 +227,8 @@ h2 {
 .form-input {
   padding: 10px 20px;
   border-radius: 10px;
+  border: 3px solid #DBDBD2;
+  width: 75%;
 }
 
 .conditions {
@@ -217,11 +239,5 @@ h2 {
 @media screen and (max-width: 980px) {
   .container {
     width: 900px;
-  }
-}
-
-@media screen and (max-width: 1368px) {
-  .container {
-    width: 1000px;
   }
 }
