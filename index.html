@@ -25,10 +25,12 @@
             <p>А что, если мы вам предложим коробку с&nbsp;продуктами и рецептами на 3 ужина для двоих по специальной цене?</p>
             <p>Заманчиво? Спешите заказать! Доставим бесплатно.</p>
           </div>
-          <a href="#order" class="btn stock-btn">Заказать</a>
+          <div class="stock-order">
+            <a href="#order" class="stock-btn btn">Заказать</a>
+          </div>
           <div class="stock-condition">
             <p>3 ужина на двоих</p>
-            <p>всего за <span class="old-cost">2000 P</span> <span class="new-cost">1600 P</span></p>
+            <p>всего за <span class="old-cost">2000&nbsp;P</span>&nbsp;<span class="new-cost">1600&nbsp;P</span></p>
           </div>
           <p class="stock-limitation">Успейте заказать до полуночи пятницы, чтобы получить коробку в воскресенье, 25 сентября</p>
         </section>
@@ -59,15 +61,15 @@
         <h2>Меню на 3 ужина</h2>
       </div>
     </div>
-
-    <div class="slider clearfix">
+    <div class="slider">
+      <button class="slider-arrow slider-left-arrow"></button>
       <div class="slider-items">
         <ul>
           <li class="slider-item">
             <img src="img/slider.jpg" width="926" height="501">
             <p>Паста с мясными шариками в томатном соусе с сыром</p>
           </li>
-          <li class="slider-item">
+          <li class="slider-item central">
             <img src="img/slider.jpg" width="926" height="501">
             <p>Паста с мясными шариками в томатном соусе с сыром</p>
           </li>
@@ -77,7 +79,9 @@
           </li>
         </ul>
       </div>
+        <button class="slider-arrow slider-right-arrow"></button>
     </div>
+
   </main>
 
   <footer>
@@ -88,15 +92,19 @@
           <h2>Не прощелкайте ;)</h2>
         </div>
         <div class="order-form">
-          <p>Закажите 3 ужина на двоих за <span class="new-cost">1600 Р</span></p>
-          <p>Только на первый заказ</p>
+          <p class="stock-condition">Закажите 3 ужина на&nbsp;двоих за <span class="new-cost">1600&nbsp;Р</span></p>
+          <div class="form-about">
+            <p>Только на первый заказ</p>
+          </div>
           <form>
             <input class="form-input form-name" type="text" placeholder="Ваше имя">
             <input class="form-input form-phone" type="text" placeholder="Ваш телефон">
             <input class="form-input form-email" type="email" placeholder="Ваш email">
             <input class="btn form-btn" type="submit" value="Заказать">
           </form>
-          <p>Успейте заказать до полуночи пятницы, чтобы получить коробку в воскресенье, 25 сентября. Доставка бесплатно!</p>
+          <div class="form-about">
+            <p>Успейте заказать до полуночи пятницы, чтобы получить коробку в воскресенье, 25 сентября. Доставка бесплатно!</p>
+          </div>
         </div>
       </div>
       <div class="conditions">
