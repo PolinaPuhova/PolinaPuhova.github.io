@@ -323,7 +323,6 @@ h2 {
   text-align: center;
   margin-right: 1%;
   font-size: 21px;
-
 }
 
 .slider-arrow {
@@ -341,9 +340,7 @@ h2 {
   left: 7%;
 }
 
-.slider-left-arrow::after {
-
-}
+.slider-left-arrow::after {}
 
 .slider-right-arrow {
   top: 35%;
@@ -382,12 +379,13 @@ h2 {
   margin: 0 auto;
   width: 36%;
   max-width: 435px;
-  padding: 30px 64px;
+  padding: 5% 5%;
   margin-top: 75px;
   border: 3px solid #DBDBD2;
   border-radius: 10px;
   background-color: #ffffff;
   text-align: center;
+  min-width: 385px;
 }
 
 .order-form p {
@@ -445,11 +443,31 @@ h2 {
   color: #443A51;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (min-width: 980px) and (max-width: 1100px) {
   .stock-preview {
     padding-top: 20%;
   }
   .stock-order::after {
     left: 70%;
+  }
+
+  .form-btn {
+    padding: 10px 25%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  h1 {
+    font-size: 48px;
+  }
+
+  .stock-preview {
+    padding-top: 20%;
+  }
+  .stock-order::after {
+    left: 80%;
+  }
+  .container {
+    padding: 0 5%;
   }
 }
