@@ -277,7 +277,7 @@ h2 {
 }
 
 .slider {
-  height: auto;
+  height: 50%;
   overflow: hidden;
   position: relative;
 }
@@ -450,17 +450,15 @@ h2 {
   .stock-order::after {
     left: 70%;
   }
-
   .form-btn {
     padding: 10px 25%;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 980px) {
+@media screen and (min-width: 830px) and (max-width: 980px) {
   h1 {
     font-size: 48px;
   }
-
   .stock-preview {
     padding-top: 20%;
   }
@@ -469,5 +467,108 @@ h2 {
   }
   .container {
     padding: 0 5%;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .bcg::before {
+    border-top: 120px solid #F6F5F0;
+  }
+  .header-title {
+    padding-left: 5%;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h1+p {
+    font-size: 25px;
+    padding-right: 50%;
+    line-height: 28px;
+  }
+  .title {
+    width: 300px;
+    text-align: center;
+  }
+  .title::before {
+    right: 310px;
+  }
+  .title::after {
+    left: 300px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  .stock-preview {
+    width: 80%;
+    padding-top: 20%;
+    padding-top: 20px;
+    z-index: 1;
+  }
+  .stock-preview {
+    float: none;
+  }
+  .stock-description {
+    float: none;
+  }
+  .stock-order {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .stock-order::after {
+    left: 80%;
+  }
+  .container {
+    padding: 0 5%;
+  }
+  .stock-description {
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 0px;
+  }
+  .stock-text {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .stock-btn {
+    padding: 30px 20%;
+    margin: 0 auto;
+  }
+  .stock-order::after {
+    background: none;
+  }
+  .stock-condition {
+    text-align: center;
+    font-size: 27px;
+    line-height: 30px;
+  }
+  .stock-limitation {
+    width: 100%;
+    text-align: center;
+  }
+
+  .work-description-content {
+    font-size: 16px;
+    margin-top: 0;
+    padding-top: 30px;
+    display: inline-block;
+    text-align: left;
+    padding-left: 20%;
+    line-height: 20px;
+    width: 80%;
+
+  }
+  .work-description-content::before {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    top: 35%;
+    left: 0;
+  }
+  .slider-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
 }
