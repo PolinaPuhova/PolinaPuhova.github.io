@@ -80,19 +80,19 @@ h1+p {
   width: 45%;
 }
 
-.stock-order {
+.stock-btn{
   position: relative;
 }
 
-.stock-order::after {
+.stock-btn::after {
   content: "";
   position: absolute;
   background: url("../img/arrow.png") no-repeat;
   background-size: contain;
   width: 97px;
   height: 105px;
-  top: 50%;
-  left: 60%;
+  top: 40%;
+  right: -62%;
 }
 
 .title {
