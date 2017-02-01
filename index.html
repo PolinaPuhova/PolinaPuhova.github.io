@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Вкус на дом</title>
-  <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:700,500,900&subset=cyrillic" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" media="screen"/>
+  <link href="css/mobile.css" rel="stylesheet" media="handheld" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:700,500,900&subset=cyrillic" rel="stylesheet"/>
 </head>
 
 <body>
@@ -18,7 +20,7 @@
       </div>
       <div class="header-stock clearfix">
         <div class="stock-preview">
-          <img src="img/image-header.jpg" width="720" height="480">
+          <img src="img/image-header.jpg" >
         </div>
         <section class="stock-description">
           <div class="stock-text">
@@ -65,7 +67,7 @@
       <div class="slider-arrow slider-left-arrow"></div>
       <div class="slider-arrow slider-right-arrow"></div>
       <div class="slider-items">
-        <ul>
+        <ul id="slider-ul">
           <li class="slider-item">
             <img src="img/slider.jpg" width="926" height="501">
             <p>Паста с мясными шариками в томатном соусе с сыром</p>
@@ -113,5 +115,5 @@
       </div>
     </div>
   </footer>
-
+<script src="js/slider.js"></script>
 </body>

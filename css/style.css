@@ -4,7 +4,7 @@ html {
 
 body {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1em;
   font-weight: bold;
   line-height: 22px;
   font-family: "Roboto", "Arial", sans-serif;
@@ -27,14 +27,14 @@ body {
 }
 
 h1 {
-  font-size: 3.56rem;
+  font-size: 3.56em;
   line-height: 69px;
   margin: 0;
 }
 
 h1+p {
   font-family: "Roboto slab";
-  font-size: 3rem;
+  font-size: 3em;
   line-height: 57px;
   font-weight: 400;
   color: #4D4D4D;
@@ -100,7 +100,7 @@ h1+p {
   display: block;
   float: left;
   text-align: center;
-  font-size: 21px;
+  font-size: 1.3125em;
   line-height: 28px;
   font-weight: 400;
   padding-top: 170px;
@@ -127,7 +127,7 @@ h1+p {
   border: 8px solid #ffffff;
   box-shadow: 0 0 0 5px #EA6F1C;
   color: #ffffff;
-  font-size: 60px;
+  font-size: 3.75rem;
   line-height: 101px;
   text-align: center;
 }
@@ -154,7 +154,7 @@ h1+p {
 .btn {
   background-color: #8AB73B;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 1.875em;
   font-weight: 400;
   border-radius: 10px;
   text-decoration: none;
@@ -182,14 +182,14 @@ img {
 }
 
 .stock-limitation {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 15px;
   color: #808080;
   width: 45%;
 }
 
 .stock-order {
-  display:block;
+  display: block;
   position: relative;
   width: 80%;
   height: 81px;
@@ -241,9 +241,10 @@ img {
   position: relative;
   width: 95%;
   min-width: 200px;
-  font-size: 34px;
+  font-size: 2.125em;
   line-height: 42px;
   font-weight: 500;
+  padding-top: 5%;
 }
 
 .stock-condition::after {
@@ -270,7 +271,7 @@ img {
 
 h2 {
   display: inline-block;
-  font-size: 45px;
+  font-size: 2.8125em;
   line-height: 54px;
   margin: 0;
 }
@@ -281,7 +282,7 @@ h2 {
 }
 
 .slider {
-  height: 50%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 }
@@ -311,7 +312,7 @@ h2 {
 }
 
 .slider-items {
-  width: 1000%;
+  width: 220%;;
   position: relative;
 }
 
@@ -319,20 +320,32 @@ h2 {
   margin: 0;
   padding: 0;
   list-style: none;
-  margin-left: -600px;
+  margin-left: -25%;
+  width: 100%;
 }
 
+.slider-item img {
+  width: 100%;
+  height: auto;
+
+}
 .slider-item {
+  display: inline-block;
   float: left;
   text-align: center;
+  font-size: 1.3125em;
+  width: 31%;
   margin-right: 1%;
-  font-size: 21px;
+}
+
+.slider-item:nth-last-child {
+  margin-right: 0;
 }
 
 .slider-arrow {
   position: absolute;
-  width: 62px;
-  height: 62px;
+  width: 3.875em;
+  height: 3.875em;
   background-color: #ffffff;
   border-radius: 50%;
   z-index: 2;
@@ -344,11 +357,27 @@ h2 {
   left: 7%;
 }
 
-.slider-left-arrow::after {}
+.slider-arrow::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-right: 20px solid #8AB73B;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
 
 .slider-right-arrow {
   top: 35%;
   right: 7%;
+}
+
+.slider-right-arrow::after {
+  left: 40%;
+  border-left: 20px solid #8AB73B;
+  border-right: none;
 }
 
 .order {
@@ -403,7 +432,7 @@ h2 {
   border: 3px solid #DBDBD2;
   width: 75%;
   text-align: center;
-  font-size: 21px;
+  font-size: 1.3125em;
   line-height: 28px;
   margin-bottom: 24px;
 }
@@ -419,8 +448,9 @@ h2 {
 .form-about {
   font-family: "Myriad Pro", sans-serif;
   margin-top: 27px;
-  font-size: 15px;
+  font-size: 0.9375em;
   color: #666666;
+  margin-bottom: 5%;
 }
 
 .conditions {
@@ -430,7 +460,7 @@ h2 {
 
 .conditions a {
   line-height: 26px;
-  font-size: 23px;
+  font-size: 1.4375em;
   color: #666666;
   font-weight: 400;
 }
@@ -447,9 +477,6 @@ h2 {
   color: #443A51;
 }
 
-@media screen and (min-width: 1100px) and (max-width: 1372px) {
-
-}
 @media screen and (min-width: 980px) and (max-width: 1100px) {
   .stock-preview {
     padding-top: 20%;
@@ -464,7 +491,7 @@ h2 {
 
 @media screen and (min-width: 830px) and (max-width: 980px) {
   h1 {
-    font-size: 48px;
+    font-size: 3em;
   }
   .stock-preview {
     padding-top: 20%;
@@ -477,20 +504,24 @@ h2 {
   }
 }
 
-@media screen and (max-width: 830px) {
+@media only screen and (max-width: 830px) {
   .bcg::before {
     border-top: 120px solid #F6F5F0;
   }
   .header-title {
     padding-left: 5%;
+    display: inline-block;
+    width: 90%;
   }
   h1 {
-    font-size: 32px;
+    line-height: 36px;
+    font-size: 2em;
+    text-align: center;
   }
   h1+p {
-    font-size: 25px;
-    padding-right: 50%;
+    font-size: 1.5625em;
     line-height: 28px;
+    text-align: right;
   }
   .title {
     width: 300px;
@@ -503,7 +534,7 @@ h2 {
     left: 300px;
   }
   h2 {
-    font-size: 28px;
+    font-size: 1.75em;
   }
   .stock-preview {
     width: 80%;
@@ -547,16 +578,15 @@ h2 {
   }
   .stock-condition {
     text-align: center;
-    font-size: 27px;
+    font-size: 1.6875em;
     line-height: 30px;
   }
   .stock-limitation {
     width: 100%;
     text-align: center;
   }
-
   .work-description-content {
-    font-size: 16px;
+    font-size: 1em;
     margin-top: 0;
     padding-top: 30px;
     display: inline-block;
@@ -564,18 +594,38 @@ h2 {
     padding-left: 20%;
     line-height: 20px;
     width: 80%;
-
   }
   .work-description-content::before {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 25px;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    font-size: 1.5625em;
     top: 35%;
     left: 0;
   }
   .slider-title {
     margin-top: 30px;
     margin-bottom: 20px;
+  }
+  .stock-condition {
+    font-size: 1.2em;
+    line-height: 24px;
+  }
+  .order-form {
+    min-width: 200px;
+    width: 80%;
+    margin-top: 20px;
+    max-width: 336px;
+  }
+  .form-input {
+    font-size: 1em;
+    padding: 10px 10px;
+  }
+  .conditions {
+    text-align: center;
+    margin: 20px;
+  }
+  .conditions a {
+    font-size: 1em;
   }
 }
