@@ -349,13 +349,13 @@ h2 {
 
 .slider-items {
   position: relative;
-  width: 220%;
+  width: 200%;
 }
 
 .slider-items ul {
   width: 100%;
   margin: 0;
-  margin-left: -25%;
+  margin-left: -23%;
   padding: 0;
   list-style: none;
 }
