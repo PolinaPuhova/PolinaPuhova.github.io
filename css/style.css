@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  width: 100%;
   margin: 0;
   font-size: 1em;
   font-weight: bold;
@@ -10,7 +11,11 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   color: #1A1A1A;
   background-color: #fff;
-  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -20,29 +25,6 @@ body {
   overflow: hidden;
 }
 
-.header-title {
-  margin: 0 auto;
-  max-width: 937px;
-  width: 816px;
-}
-
-h1 {
-  font-size: 3.56em;
-  line-height: 69px;
-  margin: 0;
-}
-
-h1+p {
-  font-family: "Roboto slab";
-  font-size: 3em;
-  line-height: 57px;
-  font-weight: 400;
-  color: #4D4D4D;
-  float: right;
-  padding-right: 18%;
-  margin: 0;
-}
-
 .bcg {
   position: relative;
   padding-top: 70px;
@@ -50,14 +32,14 @@ h1+p {
 
 .bcg::before {
   content: "";
-  width: 0;
-  height: 0;
   position: absolute;
-  border-top: 353px solid #F6F5F0;
-  border-right: 1100px solid transparent;
   z-index: -1;
   left: 0;
   top: 0;
+  width: 0;
+  height: 0;
+  border-top: 353px solid #F6F5F0;
+  border-right: 1100px solid transparent;
 }
 
 .clearfix::after {
@@ -66,10 +48,52 @@ h1+p {
   clear: both;
 }
 
+
+/*#####################################################################*/
+
+
+/*Заголовок страницы*/
+
+.header-title {
+  max-width: 937px;
+  width: 816px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+  font-size: 3.56em;
+  line-height: 69px;
+}
+
+h1+p {
+  float: right;
+  margin: 0;
+  padding-right: 18%;
+  font-family: "Roboto slab";
+  font-size: 3em;
+  line-height: 57px;
+  font-weight: 400;
+  color: #4D4D4D;
+}
+
+
+/*#####################################################################*/
+
+
+/*Заголовки 2-го уровня*/
+
+h2 {
+  display: inline-block;
+  margin: 0;
+  font-size: 2.8125em;
+  line-height: 54px;
+}
+
 .title {
+  position: relative;
   margin: 0 auto;
   width: 410px;
-  position: relative;
 }
 
 .title::before {
@@ -77,9 +101,9 @@ h1+p {
   position: absolute;
   bottom: 40%;
   right: 473px;
-  background-color: #CCCCCC;
-  height: 2px;
   width: 200%;
+  height: 2px;
+  background-color: #CCCCCC;
 }
 
 .title::after {
@@ -88,26 +112,155 @@ h1+p {
   bottom: 40%;
   left: 473px;
   background-color: #CCCCCC;
-  height: 2px;
-  width: 200%;
 }
+
+
+/*#####################################################################*/
+
+
+/*Стили кнопок*/
+
+.btn {
+  font-size: 1.875em;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #8AB73B;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #9ECE34;
+}
+
+.btn:active {
+  background-color: #7B9E30;
+}
+
+
+/*#####################################################################*/
+
+
+/*Блок описания акции*/
+
+.stock-preview {
+  position: relative;
+  z-index: -2;
+  width: 100%;
+  max-width: 720px;
+}
+
+.stock-limitation {
+  width: 45%;
+  font-size: 0.875em;
+  line-height: 15px;
+  color: #808080;
+}
+
+.stock-order {
+  position: relative;
+  display: block;
+  width: 80%;
+  height: 81px;
+  margin-bottom: 20px;
+}
+
+.stock-order::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  width: 97px;
+  height: 105px;
+  background: url("../img/arrow.png") no-repeat;
+  background-size: contain;
+}
+
+.stock-preview {
+  float: left;
+  width: 45%;
+  margin-left: 10%;
+  padding-top: 10%;
+}
+
+.stock-description {
+  float: right;
+  width: 40%;
+  margin-left: 5%;
+  padding-top: 44px;
+}
+
+.stock-text {
+  width: 80%;
+  max-width: 315px;
+  font-weight: 400;
+}
+
+.stock-btn {
+  position: relative;
+  display: inline-block;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  padding: 30px 20%;
+  margin-right: 5%;
+}
+
+.stock-condition {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  width: 95%;
+  min-width: 200px;
+  padding-top: 5%;
+  font-size: 2.125em;
+  line-height: 42px;
+  font-weight: 500;
+}
+
+.stock-condition::after {
+  width: 20%;
+  height: 50%;
+  border-radius: 10px;
+}
+
+.stock-condition p {
+  margin: 0;
+}
+
+.new-cost {
+  position: relative;
+  font-weight: bold;
+  color: #8AB73B;
+}
+
+.old-cost {
+  font-weight: 500;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+
+/*#####################################################################*/
+
+
+/*Блок с описанием работы*/
 
 .work-description-title {
   margin-top: 7%;
 }
 
 .work-description-content {
-  display: block;
+  position: relative;
   float: left;
+  display: block;
   text-align: center;
+  width: 23%;
+  margin-right: 2%;
+  margin-top: 73px;
+  padding-top: 170px;
   font-size: 1.3125em;
   line-height: 28px;
   font-weight: 400;
-  padding-top: 170px;
-  width: 23%;
-  position: relative;
-  margin-right: 2%;
-  margin-top: 73px;
 }
 
 .work-description-content:last-child {
@@ -116,20 +269,20 @@ h1+p {
 
 .work-description-content::before {
   content: "";
-  width: 101px;
-  height: 101px;
   position: absolute;
-  border-radius: 50%;
-  background-color: #EA6F1C;
   top: 34px;
   left: 23%;
+  width: 101px;
+  height: 101px;
   padding: 10px;
-  border: 8px solid #ffffff;
-  box-shadow: 0 0 0 5px #EA6F1C;
-  color: #ffffff;
   font-size: 3.75rem;
   line-height: 101px;
   text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: #EA6F1C;
+  border: 8px solid #ffffff;
+  box-shadow: 0 0 0 5px #EA6F1C;
 }
 
 .description-item-1::before {
@@ -151,130 +304,11 @@ h1+p {
   content: "4";
 }
 
-.btn {
-  background-color: #8AB73B;
-  color: #ffffff;
-  font-size: 1.875em;
-  font-weight: 400;
-  border-radius: 10px;
-  text-decoration: none;
-  cursor: pointer;
-}
 
-.btn:hover {
-  background-color: #9ECE34;
-}
+/*#####################################################################*/
 
-.btn:active {
-  background-color: #7B9E30;
-}
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.stock-preview {
-  width: 100%;
-  position: relative;
-  max-width: 720px;
-  z-index: -2;
-}
-
-.stock-limitation {
-  font-size: 0.875em;
-  line-height: 15px;
-  color: #808080;
-  width: 45%;
-}
-
-.stock-order {
-  display: block;
-  position: relative;
-  width: 80%;
-  height: 81px;
-  margin-bottom: 20px;
-}
-
-.stock-order::after {
-  content: "";
-  position: absolute;
-  background: url("../img/arrow.png") no-repeat;
-  background-size: contain;
-  width: 97px;
-  height: 105px;
-  top: 40%;
-}
-
-.stock-preview {
-  width: 45%;
-  float: left;
-  margin-left: 10%;
-  padding-top: 10%;
-}
-
-.stock-description {
-  float: right;
-  width: 40%;
-  margin-left: 5%;
-  padding-top: 44px;
-}
-
-.stock-text {
-  font-weight: 400;
-  width: 80%;
-  max-width: 315px;
-}
-
-.stock-btn {
-  display: inline-block;
-  margin-top: 3%;
-  margin-bottom: 2%;
-  padding: 30px 20%;
-  position: relative;
-  margin-right: 5%;
-}
-
-.stock-condition {
-  display: inline-block;
-  text-align: left;
-  position: relative;
-  width: 95%;
-  min-width: 200px;
-  font-size: 2.125em;
-  line-height: 42px;
-  font-weight: 500;
-  padding-top: 5%;
-}
-
-.stock-condition::after {
-  width: 20%;
-  height: 50%;
-  border-radius: 10px;
-}
-
-.stock-condition p {
-  margin: 0;
-}
-
-.new-cost {
-  color: #8AB73B;
-  font-weight: bold;
-  position: relative;
-}
-
-.old-cost {
-  text-decoration: line-through;
-  color: #999999;
-  font-weight: 500;
-}
-
-h2 {
-  display: inline-block;
-  font-size: 2.8125em;
-  line-height: 54px;
-  margin: 0;
-}
+/*Слайдер*/
 
 .slider-title {
   margin-top: 120px;
@@ -282,60 +316,55 @@ h2 {
 }
 
 .slider {
+  position: relative;
   width: 100%;
   overflow: hidden;
-  position: relative;
 }
 
 .slider::before {
   content: "";
   position: absolute;
-  background-image: linear-gradient(to right, #ffffff, transparent);
-  width: 17%;
-  height: 90%;
-  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
+  width: 17%;
+  height: 90%;
+  background-image: -webkit-linear-gradient(left, #ffffff, transparent);
+  background-image: linear-gradient(to right, #ffffff, transparent);
 }
 
 .slider::after {
   content: "";
   position: absolute;
-  background-image: linear-gradient(to left, #ffffff, transparent);
-  width: 17%;
-  height: 90%;
-  position: absolute;
   top: 0;
   right: 0;
   z-index: 1;
+  width: 17%;
+  height: 90%;
+  background-image: -webkit-linear-gradient(right, #ffffff, transparent);
+  background-image: linear-gradient(to left, #ffffff, transparent);
 }
 
 .slider-items {
-  width: 220%;;
   position: relative;
+  width: 220%;
 }
 
 .slider-items ul {
+  width: 100%;
   margin: 0;
+  margin-left: -25%;
   padding: 0;
   list-style: none;
-  margin-left: -25%;
-  width: 100%;
 }
 
-.slider-item img {
-  width: 100%;
-  height: auto;
-
-}
 .slider-item {
   display: inline-block;
-  float: left;
   text-align: center;
-  font-size: 1.3125em;
+  float: left;
   width: 31%;
   margin-right: 1%;
+  font-size: 1.3125em;
 }
 
 .slider-item:nth-last-child {
@@ -346,10 +375,9 @@ h2 {
   position: absolute;
   width: 3.875em;
   height: 3.875em;
+  z-index: 2;
   background-color: #ffffff;
   border-radius: 50%;
-  z-index: 2;
-  border: none;
 }
 
 .slider-left-arrow {
@@ -359,14 +387,14 @@ h2 {
 
 .slider-arrow::after {
   content: "";
+  position: absolute;
+  top: 15%;
+  left: 25%;
   width: 0;
   height: 0;
   border-top: 20px solid transparent;
   border-right: 20px solid #8AB73B;
   border-bottom: 20px solid transparent;
-  position: absolute;
-  top: 15%;
-  left: 25%;
 }
 
 .slider-right-arrow {
@@ -380,45 +408,51 @@ h2 {
   border-right: none;
 }
 
+
+/*#####################################################################*/
+
+
+/*Блок оформления заказа*/
+
 .order {
   position: relative;
 }
 
 .order::before {
   content: "";
+  position: absolute;
+  top: 31px;
+  left: -15%;
+  z-index: -1;
   width: 0;
   height: 0;
-  position: absolute;
   border-top: 353px solid #F6F5F0;
   border-right: 1100px solid transparent;
-  z-index: -1;
-  left: -15%;
-  top: 31px;
 }
 
 .order::after {
   content: "";
-  width: 0;
-  height: 0;
   position: absolute;
-  border-bottom: 353px solid #F6F5F0;
-  border-left: 1100px solid transparent;
-  z-index: -1;
   right: -15%;
   bottom: -180px;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-bottom: 353px solid #F6F5F0;
+  border-left: 1100px solid transparent;
 }
 
 .order-form {
-  margin: 0 auto;
   width: 36%;
+  min-width: 385px;
   max-width: 435px;
-  padding: 5% 5%;
+  margin: 0 auto;
   margin-top: 75px;
+  padding: 5% 5%;
   border: 3px solid #DBDBD2;
   border-radius: 10px;
   background-color: #ffffff;
   text-align: center;
-  min-width: 385px;
 }
 
 .order-form p {
@@ -427,31 +461,47 @@ h2 {
 }
 
 .form-input {
-  padding: 20px 20px;
-  border-radius: 10px;
-  border: 3px solid #DBDBD2;
   width: 75%;
+  padding: 20px 20px;
   text-align: center;
   font-size: 1.3125em;
   line-height: 28px;
   margin-bottom: 24px;
+  border: 3px solid #DBDBD2;
+  border-radius: 10px;
+}
+
+.form-input:hover, .form-input:active {
+  border-color: #708090;
+  outline: none;
+}
+
+.form-input:focus {
+  border-color: #2F4F4F;
+  outline: none;
 }
 
 .form-btn {
   display: inline-block;
   text-align: center;
-  padding: 20px 20%;
   width: 85%;
+  padding: 20px 20%;
   border: none;
 }
 
 .form-about {
-  font-family: "Myriad Pro", sans-serif;
-  margin-top: 27px;
-  font-size: 0.9375em;
-  color: #666666;
+  margin-top: 5%;
   margin-bottom: 5%;
+  font-size: 0.9375em;
+  font-family: "Myriad Pro", "Arial", sans-serif;
+  color: #666666;
 }
+
+
+/*#####################################################################*/
+
+
+/*Условия обслуживания*/
 
 .conditions {
   width: 260px;
@@ -459,10 +509,10 @@ h2 {
 }
 
 .conditions a {
-  line-height: 26px;
   font-size: 1.4375em;
-  color: #666666;
+  line-height: 26px;
   font-weight: 400;
+  color: #666666;
 }
 
 .conditions a:hover {
@@ -476,6 +526,12 @@ h2 {
 .conditions a:visited {
   color: #443A51;
 }
+
+
+/*#####################################################################*/
+
+
+/*Для экранов размером 980-1100*/
 
 @media screen and (min-width: 980px) and (max-width: 1100px) {
   .stock-preview {
@@ -503,6 +559,12 @@ h2 {
   }
 }
 
+
+/*#####################################################################*/
+
+
+/*Для экранов размером от 830 до 980*/
+
 @media screen and (min-width: 830px) and (max-width: 980px) {
   h1 {
     font-size: 3em;
@@ -529,150 +591,5 @@ h2 {
     border-left: 17px solid #8AB73B;
     border-top-width: 17px;
     border-bottom-width: 17px;
-  }
-}
-
-@media only screen and (max-width: 830px) {
-  .bcg::before {
-    border-top: 120px solid #F6F5F0;
-  }
-  .header-title {
-    padding-left: 5%;
-    display: inline-block;
-    width: 90%;
-  }
-  h1 {
-    line-height: 36px;
-    font-size: 2em;
-    text-align: center;
-  }
-  h1+p {
-    font-size: 1.5625em;
-    line-height: 28px;
-    text-align: right;
-  }
-  .title {
-    width: 300px;
-    text-align: center;
-  }
-  .title::before {
-    right: 310px;
-  }
-  .title::after {
-    left: 300px;
-  }
-  h2 {
-    font-size: 1.75em;
-  }
-  .stock-preview {
-    width: 80%;
-    padding-top: 20%;
-    padding-top: 20px;
-    z-index: 1;
-  }
-  .stock-preview {
-    float: none;
-  }
-  .stock-description {
-    float: none;
-  }
-  .stock-order {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .stock-order::after {
-    left: 80%;
-  }
-  .container {
-    padding: 0 5%;
-  }
-  .stock-description {
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 0px;
-  }
-  .stock-text {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-  .stock-btn {
-    padding: 30px 20%;
-    margin: 0 auto;
-  }
-  .stock-order::after {
-    background: none;
-  }
-  .stock-condition {
-    text-align: center;
-    font-size: 1.6875em;
-    line-height: 30px;
-  }
-  .stock-limitation {
-    width: 100%;
-    text-align: center;
-  }
-  .work-description-content {
-    font-size: 1em;
-    margin-top: 0;
-    padding-top: 5%;
-    display: inline-block;
-    text-align: left;
-    padding-left: 20%;
-    line-height: 20px;
-    width: 80%;
-  }
-  .work-description-content::before {
-    width: 15px;
-    height: 15px;
-    line-height: 15px;
-    font-size: 1.5625em;
-    top: 35%;
-    left: 0;
-  }
-  .slider-arrow {
-    top: 30%;
-    width: 30px;
-    height: 30px;
-  }
-  .slider-left-arrow::after {
-    border-right: 10px solid #8AB73B;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-  }
-  .slider-right-arrow::after {
-    border-left: 10px solid #8AB73B;
-    border-top-width: 10px;
-    border-bottom-width: 10px;
-  }
-  .slider-title {
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
-  .slider-item {
-    font-size: 0.8em;
-    line-height: 1.2em;
-  }
-  .stock-condition {
-    font-size: 1.2em;
-    line-height: 24px;
-  }
-  .order-form {
-    min-width: 200px;
-    width: 80%;
-    margin-top: 20px;
-    max-width: 336px;
-  }
-  .form-input {
-    font-size: 1em;
-    padding: 10px 10px;
-  }
-  .conditions {
-    text-align: center;
-    margin: 20px auto ;
-  }
-  .conditions a {
-    font-size: 1em;
   }
 }

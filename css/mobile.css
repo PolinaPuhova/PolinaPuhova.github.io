@@ -1,99 +1,176 @@
- {
-  .bcg::before {
-    border-top: 120px solid #F6F5F0;
-  }
-  .header-title {
-    padding-left: 5%;
-  }
-  h1 {
-    font-size: 32px;
-  }
-  h1+p {
-    font-size: 25px;
-    padding-right: 50%;
-    line-height: 28px;
-  }
-  .title {
-    width: 300px;
-    text-align: center;
-  }
-  .title::before {
-    right: 310px;
-  }
-  .title::after {
-    left: 300px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  .stock-preview {
-    width: 80%;
-    padding-top: 20%;
-    padding-top: 20px;
-    z-index: 1;
-  }
-  .stock-preview {
-    float: none;
-  }
-  .stock-description {
-    float: none;
-  }
-  .stock-order {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .stock-order::after {
-    left: 80%;
-  }
-  .container {
-    padding: 0 5%;
-  }
-  .stock-description {
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 0px;
-  }
-  .stock-text {
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-  }
-  .stock-btn {
-    padding: 30px 20%;
-    margin: 0 auto;
-  }
-  .stock-order::after {
-    background: none;
-  }
-  .stock-condition {
-    text-align: center;
-    font-size: 27px;
-    line-height: 30px;
-  }
-  .stock-limitation {
-    width: 100%;
-    text-align: center;
-  }
-  .work-description-content {
-    font-size: 16px;
-    margin-top: 0;
-    padding-top: 30px;
-    display: inline-block;
-    text-align: left;
-    padding-left: 20%;
-    line-height: 20px;
-    width: 80%;
-  }
-  .work-description-content::before {
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    font-size: 25px;
-    top: 35%;
-    left: 0;
-  }
-  .slider-title {
-    margin-top: 30px;
-    margin-bottom: 20px;
-  }
+/*#####################################################################*/
+
+
+/*Для экранов размером до 830*/
+
+.bcg::before {
+  border-top: 120px solid #F6F5F0;
+}
+
+.header-title {
+  display: inline-block;
+  width: 90%;
+  padding-left: 5%;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 36px;
+  text-align: center;
+}
+
+h1+p {
+  font-size: 1.5625em;
+  line-height: 28px;
+  text-align: right;
+}
+
+.title {
+  width: 300px;
+  text-align: center;
+}
+
+.title::before {
+  right: 310px;
+}
+
+.title::after {
+  left: 300px;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+.stock-preview {
+  width: 80%;
+  padding-top: 20px;
+}
+
+.stock-preview {
+  float: none;
+}
+
+.stock-description {
+  float: none;
+}
+
+.stock-order {
+  margin: 0 auto;
+  padding-right: 15%;
+  text-align: center;
+}
+
+.stock-order::after {
+  left: 80%;
+}
+
+.container {
+  padding: 0 5%;
+}
+
+.stock-description {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 0px;
+}
+
+.stock-text {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.stock-btn {
+  margin: 0 auto;
+  padding: 30px 20%;
+}
+
+.stock-order::after {
+  background: none;
+}
+
+.stock-condition {
+  text-align: center;
+  font-size: 1.6875em;
+  line-height: 30px;
+}
+
+.stock-limitation {
+  width: 100%;
+  text-align: center;
+}
+
+.work-description-content {
+  display: inline-block;
+  width: 80%;
+  margin-top: 0;
+  padding-top: 5%;
+  padding-left: 20%;
+  text-align: left;
+  font-size: 1em;
+  line-height: 20px;
+}
+
+.work-description-content::before {
+  top: 35%;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  font-size: 1.5625em;
+  line-height: 15px;
+}
+
+.slider-arrow {
+  top: 30%;
+  width: 30px;
+  height: 30px;
+}
+
+.slider-left-arrow::after {
+  border-right: 10px solid #8AB73B;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+}
+
+.slider-right-arrow::after {
+  border-left: 10px solid #8AB73B;
+  border-top-width: 10px;
+  border-bottom-width: 10px;
+}
+
+.slider-title {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.slider-item {
+  font-size: 0.8em;
+  line-height: 1.2em;
+}
+
+.stock-condition {
+  font-size: 1.2em;
+  line-height: 24px;
+}
+
+.order-form {
+  width: 80%;
+  max-width: 336px;
+  min-width: 200px;
+  margin-top: 20px;
+}
+
+.form-input {
+  padding: 10px 10px;
+  font-size: 1em;
+}
+
+.conditions {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.conditions a {
+  font-size: 1em;
+}

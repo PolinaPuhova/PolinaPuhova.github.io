@@ -5,31 +5,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Вкус на дом</title>
+  <link href="css/normalize.css" rel="stylesheet" media="all" />
   <link href="css/style.css" rel="stylesheet" media="screen" />
-  <link href="css/mobile.css" rel="stylesheet" media="handheld" />
+  <link href="css/mobile.css" rel="stylesheet" media="screen and (max-width: 830px)" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:700,500,900&subset=cyrillic" rel="stylesheet" />
+  <script src="js/jquery-3.1.1.min.js"></script>
 </head>
 
 <body>
-
   <header>
     <div class="container bcg">
+
+      <!--Заголовок страницы-->
       <div class="header-title clearfix">
         <h1>Устали ходить за продуктами</h1>
         <p>в магазин?</p>
       </div>
+
+      <!--Блок описания акции-->
       <div class="header-stock clearfix">
+
+        <!--Картинка превью-->
         <div class="stock-preview">
-          <img src="img/image-header.jpg">
+          <img src="img/image-header.jpg" alt="preview-image">
         </div>
+
+        <!--Описание акции-->
         <section class="stock-description">
           <div class="stock-text">
             <p>А что, если мы вам предложим коробку с&nbsp;продуктами и рецептами на 3 ужина для двоих по специальной цене?</p>
             <p>Заманчиво? Спешите заказать! Доставим бесплатно.</p>
           </div>
+
+          <!--Кнопка заказа-->
           <div class="stock-order">
             <a href="#order" class="stock-btn btn">Заказать</a>
           </div>
+
+          <!--Условия акции-->
           <div class="stock-condition">
             <p>3 ужина на двоих</p>
             <p>всего за <span class="old-cost">2000&nbsp;P</span>&nbsp;<span class="new-cost">1600&nbsp;P</span></p>
@@ -42,10 +55,16 @@
 
   <main>
     <div class="container">
+
+      <!--Блок с описанием работы-->
       <div class="work-description clearfix">
+
+        <!--Заголовок описания работы-->
         <div class="work-description-title title">
           <h2>Как это работает?</h2>
         </div>
+
+        <!--Пошаговое описание работы-->
         <div class="work-description-content description-item-1">
           <p>Мы закупаем свежие продукты и наши шеф-повара создают для вас лучшие рецепты</p>
         </div>
@@ -59,43 +78,55 @@
           <p>Вы готовите по нашему рецепту - 30 минут и ваш вкусный ужин готов!</p>
         </div>
       </div>
+
+      <!--Заголовок слайдера-->
       <div class="slider-title title">
         <h2>Меню на 3 ужина</h2>
       </div>
     </div>
+
+    <!--Блок слайдера-->
     <div class="slider">
+
+      <!--Кнопки управления слайдером-->
       <div class="slider-arrow slider-left-arrow"></div>
       <div class="slider-arrow slider-right-arrow"></div>
+
+      <!--Слайды-->
       <div class="slider-items">
         <ul id="slider-ul">
           <li class="slider-item">
-            <img src="img/slider.jpg" width="926" height="501">
+            <img src="img/slider.jpg" width="926" height="501" alt="Паста с мясными шариками в томатном соусе с сыром">
             <p>1Паста с мясными шариками в томатном соусе с сыром</p>
 
           <li class="slider-item">
-            <img src="img/slider.jpg" width="926" height="501">
+            <img src="img/slider.jpg" width="926" height="501" alt="Паста с мясными шариками в томатном соусе с сыром">
             <p>2Паста с мясными шариками в томатном соусе с сыром</p>
 
           <li class="slider-item">
-            <img src="img/slider.jpg" width="926" height="501">
+            <img src="img/slider.jpg" width="926" height="501" alt="Паста с мясными шариками в томатном соусе с сыром">
             <p>3Паста с мясными шариками в томатном соусе с сыром</p>
 
         </ul>
       </div>
-
     </div>
-
   </main>
 
   <footer>
     <div class="container">
       <a id="order"></a>
+
+      <!--Блок для заказа-->
       <div class="order">
+
+        <!--Заголовок блока заказа-->
         <div class="order-title title">
           <h2>Не прощелкайте ;)</h2>
         </div>
+
+        <!--Форма заказа-->
         <div class="order-form">
-          <p class="stock-condition">Закажите 3 ужина на&nbsp;двоих за <span class="new-cost">1600&nbsp;Р</span></p>
+          <p class="stock-condition">Закажите 3 ужина на&nbsp;двоих за&nbsp;<span class="new-cost">1600&nbsp;Р</span></p>
           <div class="form-about">
             <p>Только на первый заказ</p>
           </div>
@@ -110,10 +141,15 @@
           </div>
         </div>
       </div>
+
+      <!--Условия обслуживания-->
       <div class="conditions">
         <a href="#">Условия обслуживания</a>
       </div>
     </div>
   </footer>
+
+  <!--Скрипт слайдера-->
   <script src="js/slider.js"></script>
+  <script src="js/scroll.js"></script>
 </body>
