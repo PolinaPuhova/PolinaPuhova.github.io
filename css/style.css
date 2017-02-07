@@ -111,6 +111,8 @@ h2 {
   position: absolute;
   bottom: 40%;
   left: 473px;
+  width: 200%;
+  height: 2px;
   background-color: #CCCCCC;
 }
 
@@ -572,8 +574,8 @@ h2 {
   .stock-preview {
     padding-top: 20%;
   }
-  .stock-btn::after {
-    left: 70%;
+  .stock-order::after {
+    right: -40%;
   }
   .container {
     padding: 0 5%;
